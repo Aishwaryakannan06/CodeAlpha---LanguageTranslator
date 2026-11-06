@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaAI - Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🌍 LinguaAI</h1>
+            <p>Break language barriers with AI-powered translation.</p>
+        </header>
+
+        <main class="translator">
+            <div class="language-selection">
+                <div>
+                    <label for="sourceLanguage">Translate from</label>
+                    <select id="sourceLanguage">
+                        <option value="auto">Detect Language</option>
+                        <option value="en">English</option>
+                        <option value="ta">Tamil</option>
+                        <option value="hi">Hindi</option>
+                        <option value="fr">French</option>
+                        <option value="es">Spanish</option>
+                        <option value="de">German</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ar">Arabic</option>
+                    </select>
+                </div>
+
+                <button id="swapButton" title="Swap languages">⇄</button>
+
+                <div>
+                    <label for="targetLanguage">Translate to</label>
+                    <select id="targetLanguage">
+                        <option value="ta">Tamil</option>
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="fr">French</option>
+                        <option value="es">Spanish</option>
+                        <option value="de">German</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ar">Arabic</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="text-areas">
+                <div class="text-box">
+                    <textarea id="inputText"
+                        placeholder="Enter text to translate..."></textarea>
+                    <span id="characterCount">0 / 1000</span>
+                </div>
+
+                <div class="text-box">
+                    <textarea id="outputText"
+                        placeholder="Your translation will appear here..."
+                        readonly></textarea>
+                    <button id="copyButton">Copy translation</button>
+                </div>
+            </div>
+
+            <button id="translateButton">Translate Now</button>
+            <p id="statusMessage"></p>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ using Python and AI translation technology</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
